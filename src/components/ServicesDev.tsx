@@ -113,7 +113,7 @@ if(editMode){
       <div className="relative group">
         <button className={props.portait? "px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 items-center z-10":"px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:flex gap-2 items-center z-10"} onClick={()=>setEdit(true)}>Edit Item<FaRegEdit/></button>
 
-      <div className={props.portait?"grid grid-cols-1 md:grid-cols-2 gap-4 my-2 blur-sm":"grid grid-cols-1 md:grid-cols-2 gap-4 my-2 group-hover:blur-sm"}>
+      <div className={props.portait?"grid grid-cols-1 md:grid-cols-2 gap-4 my-2":"grid grid-cols-1 md:grid-cols-2 gap-4 my-2 group-hover:blur-sm"}>
             {props.services.map((service,index)=>(
               <div key={uuidv4()} className='flex flex-col items-center border-2 border-primary rounded-lg p-4'>
                     <img src={service.icon} className='w-12 h-12' alt="No Image" />

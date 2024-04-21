@@ -101,7 +101,7 @@ interface WorkExperience {
             <div className="group relative w-full h-full">
             <button className={props.portait? "px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 items-center z-10":"px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:flex gap-2 items-center z-10"} onClick={()=>setEdit(true)}>Edit Item<FaRegEdit/></button>
 
-            <div className={props.portait? 'border-l-4 border-primary pl-4 mt-4 blur-sm':'border-l-4 border-primary pl-4 mt-4 group-hover:blur-sm'}>
+            <div className={props.portait? 'border-l-4 border-primary pl-4 mt-4':'border-l-4 border-primary pl-4 mt-4 group-hover:blur-sm'}>
 
             {props.work_experience.map((works,index)=>((
                 <div key={uuidv4()} className="flex flex-col py-2">

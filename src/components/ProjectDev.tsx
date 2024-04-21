@@ -100,7 +100,7 @@ if(editMode){
         <div className='relative group h-full'>
         <button className={portait? "px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 items-center z-10":"px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:flex gap-2 items-center z-10"} onClick={()=>setEdit(true)}>Edit Item<FaRegEdit/></button>
 
-          <div className={portait?"blur-sm":"group-hover:blur-sm"}>
+          <div className={portait?"":"group-hover:blur-sm"}>
 
           <img className='w-full rounded-lg my-2 border-2 border-primary' src={project.img} alt="" />
           <div className='flex flex-row justify-between align-center'>

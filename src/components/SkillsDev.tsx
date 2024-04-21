@@ -169,7 +169,7 @@ const [editMode,setEdit]=React.useState(false);
         <button className={props.portait? "px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 items-center z-10":"px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:flex gap-2 items-center z-10"} onClick={()=>setEdit(true)}>Edit Item<FaRegEdit/></button>
 
       {props.skills.map((skill,index)=>(
-        <div key={uuidv4()} className={props.portait?"blur-sm":'group-hover:blur-sm'}>
+        <div key={uuidv4()} className={props.portait?"":'group-hover:blur-sm'}>
             <span className="block font-extrabold text-xl py-3">{skill.title}</span>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
 

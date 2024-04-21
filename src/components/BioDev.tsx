@@ -114,7 +114,7 @@ const FirstPage : React.FC<FirstPageProps>= (props) => {
   return (<div className={props.portait? "h-5/6 overflow-auto p-9": "h-full overflow-auto p-9"}>
 <div className="relative group h-full">
 <button className={props.portait? "px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 items-center z-10":"px-3 py-2 bg-green-500 text-white rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:flex gap-2 items-center z-10"} onClick={()=>setEdit(true)}>Edit Item<FaRegEdit/></button>
-    <div className={props.portait?'flex flex-col items-center blur-sm':'flex flex-col items-center group-hover:blur-sm'}>
+    <div className={props.portait?'flex flex-col items-center':'flex flex-col items-center group-hover:blur-sm'}>
         <img className='aspect-square w-44 rounded-full ring-4 ring-primary' src={props.bio_img}/>
         <span className='flex gap-3 font-bold text-4xl'>{props.name}</span>
         <span className='flex gap-3 font-bold text-2xl text-black'>{props.profession}</span>
